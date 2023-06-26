@@ -7,7 +7,7 @@ export class FetchPokemonsInboundDto {
   @Min(0)
   @Max(99999)
   @Type(() => Number)
-  readonly limit: number = 150;
+  readonly limit: number = 20;
 
   @IsOptional()
   @IsInt()
