@@ -16,7 +16,7 @@ import {
  * see relative documentation: https://pokeapi.co/docs/v2
  */
 export class PokemonsService {
-  private readonly API_BASE_URL: string = `${process.env.POKEAPI_BASE_URL}`;
+  private readonly API_BASE_URL: string = `https://pokeapi.co/api/v2`;
   constructor(private readonly httpService: HttpService) {}
 
   async getPokemon(pokemonName: string): Promise<GetPokemonDto> {
